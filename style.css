@@ -1,7 +1,12 @@
+* {
+    
+}
+
+
 td {
     border: 2px solid #333;
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    width: 225px;
     text-align: center;
     vertical-align: middle;
     font-size: 70px;
@@ -12,8 +17,9 @@ td {
 table {
     border-collapse: collapse;  
     text-align: center;
-    top: 50px;
+    top: 10px;
     margin-top: 0px;
+    background-image: cross-fade();
 }
 
 table tr:first-child td {
@@ -46,11 +52,21 @@ table tr td:last-child {
 
 .meh {
     position: relative;
+    margin-top: 0px;
 }
 
 .button {
     text-align: center;
-    margin: 20px;
-    position: fixed;
+    margin: 0px 0px 0px 0px;
+}
 
+body{
+    background-image: url(img/pic1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.name {
+    background-image: none;
+    margin: 5px;
 }

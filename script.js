@@ -35,10 +35,13 @@ turn(square.target.id, track)
 }
 
 function turn(squareID, player){
+if(board[squareID] === human || board[squareID] === ai)
+return;    
 board[squareID] = player;
 document.getElementById(squareID).innerText = player;
 if(track === human)
 track = ai;
 else
 track = human;
+
 }
