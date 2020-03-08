@@ -1,15 +1,15 @@
-* {
-    
+*{
+    padding: 0;
+    margin: 0;
 }
 
-
 td {
-    border: 2px solid #333;
+    border: 10px solid black;
     height: 225px;
     width: 225px;
     text-align: center;
     vertical-align: middle;
-    font-size: 70px;
+    font-size: 150px;
     font-family: 'Ewert', cursive;
     cursor: pointer;
 }
@@ -19,7 +19,6 @@ table {
     text-align: center;
     top: 10px;
     margin-top: 0px;
-    background-image: cross-fade();
 }
 
 table tr:first-child td {
@@ -36,23 +35,26 @@ table tr td:last-child {
 }
 
 .endgame {
-    width: 200px;
-    top: 120px
-    background-color: rgba(0,0,0,.3);
-    postion: absolute;
-    border-radius: 5px;:
-    color: white:
+    display: none;
+    background-color: rgba(205,133,63,0.8);
+    left: 50%;
+    margin-left: -175px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+   
+    width: 350px;
+    height: 150px;
+    top: 120px;
     font-size: 2em;
 }
 
 .name {
     text-align: center;
-
-}
-
-.meh {
     position: relative;
-    margin-top: 0px;
+
 }
 
 .button {
@@ -60,13 +62,53 @@ table tr td:last-child {
     margin: 0px 0px 0px 0px;
 }
 
-body{
-    background-image: url(img/pic1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .name {
-    background-image: none;
     margin: 5px;
 }
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+height: 100vh;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+transition: 20s;
+position: absolute;
+
+animation-name: animate;
+animation-direction: normal;
+animation-duration: 300s;
+animation-fill-mode: none;
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation-timing-function: ease;
+}
+
+@keyframes animate{
+0%{background-image:url(img/pic1.jpg);}
+5%{background-image:url(img/pic2.jpg);}
+10%{background-image:url(img/pic3.jpg);}
+15%{background-image:url(img/pic4.jpg);}
+20%{background-image:url(img/pic5.jpg);}
+25%{background-image:url(img/pic6.jpg);} 
+30%{background-image:url(img/pic7.jpg);}
+35%{background-image:url(img/pic8.jpg);}
+40%{background-image:url(img/pic9.jpg);}
+45%{background-image:url(img/pic10.jpg);} 
+50%{background-image:url(img/pic11.jpg);}
+55%{background-image:url(img/pic12.jpg);}
+60%{background-image:url(img/pic13.jpg);}
+65%{background-image:url(img/pic14.jpg);}
+70%{background-image:url(img/pic15.jpg);}
+75%{background-image:url(img/pic16.jpg);}
+80%{background-image:url(img/pic17.jpg);}
+85%{background-image:url(img/pic18.jpg);}
+90%{background-image:url(img/pic19.jpg);}
+95%{background-image:url(img/pic20.jpg);}
+100%{background-image:url(img/pic21.jpg);}
+}
+
